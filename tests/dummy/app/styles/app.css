@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  padding: 20px;
+}
+
+.full-h {
+  min-height: 100vh;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.active {
+  color: green;
+}
