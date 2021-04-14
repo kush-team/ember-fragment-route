@@ -1,38 +1,59 @@
-ember-fragment-route
-==============================================================================
+# ember-fragment-route
 
-[Short description of the addon.]
+A simple way to use anchors in Ember JS
 
+## Compatibility
 
-Compatibility
-------------------------------------------------------------------------------
+- Ember.js v3.16 or above
+- Ember CLI v2.13 or above
+- Node.js v10 or above
 
-* Ember.js v3.16 or above
-* Ember CLI v2.13 or above
-* Node.js v10 or above
-
-
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-fragment-route
 ```
 
+## Usage
+Template
+Link
+```
+  <Fragment-Link @hash="test" @path="/" @activeClass="active" @title="test" />
+  <Fragment-Link @hash="test2" @path="/" @activeClass="active" @title="test 2" />
+  <Fragment-Link @hash="test3" @path="/" @activeClass="active" @title="test 3" />
 
-Usage
-------------------------------------------------------------------------------
+```
+Template Fragment
+```
+<Fragment @hash="test" class="content full-h">
+  <p>Test 1</p>
+</Fragment>
 
-[Longer description of how to use the addon in apps.]
+<Fragment @hash="test2" class="content full-h">
+  <p>test 2</p>
+</Fragment>
 
+<Fragment @hash="test3" class="content full-h">
+  <p>test 3</p>
+</Fragment>
+```
 
-Contributing
-------------------------------------------------------------------------------
+Route
+```
+import FragmentRoute from 'ember-fragment-route/routes/fragment-route';
+
+export default class SomeRoute extends FragmentRoute {
+
+}
+
+```
+
+See the [Demo](https://ember-fragment-route.vercel.app/)
+
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
-
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).

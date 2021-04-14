@@ -1,15 +1,17 @@
 {
   "name": "ember-fragment-route",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kush-team/ember-fragment-route.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "kush-team",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -102,5 +104,10 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/kush-team/ember-fragment-route/issues"
+  },
+  "homepage": "https://github.com/kush-team/ember-fragment-route#readme",
+  "main": "index.js"
 }
