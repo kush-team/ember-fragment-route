@@ -17,16 +17,29 @@ ember install ember-fragment-route
 ```
 
 ## Usage
-Template
-Link
-```
-  <Fragment-Link @hash="test" @path="/" @activeClass="active" @title="test" />
-  <Fragment-Link @hash="test2" @path="/" @activeClass="active" @title="test 2" />
-  <Fragment-Link @hash="test3" @path="/" @activeClass="active" @title="test 3" />
-
+Template Link
+```handlebars
+  <Fragment-Link 
+    @hash="test"
+    @path="/" 
+    @activeClass="active" 
+    @title="test" 
+  />
+  <Fragment-Link 
+    @hash="test2"
+    @path="/" 
+    @activeClass="active" 
+    @title="test 2" 
+  />
+  <Fragment-Link 
+    @hash="test3" 
+    @path="/" 
+    @activeClass="active" 
+    @title="test 3" 
+  />
 ```
 Template Fragment
-```
+```handlebars
 <Fragment @hash="test" class="content full-h">
   <p>Test 1</p>
 </Fragment>
@@ -41,7 +54,7 @@ Template Fragment
 ```
 
 Route
-```
+```javascript
 import FragmentRoute from 'ember-fragment-route/routes/fragment-route';
 
 export default class SomeRoute extends FragmentRoute {
