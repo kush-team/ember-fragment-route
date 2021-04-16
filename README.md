@@ -1,4 +1,6 @@
+[![Node.js CI](https://github.com/kush-team/ember-fragment-route/actions/workflows/node.js.yml/badge.svg)](https://github.com/kush-team/ember-fragment-route/actions/workflows/node.js.yml)
 [![DeepScan grade](https://deepscan.io/api/teams/13691/projects/16700/branches/363420/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=13691&pid=16700&bid=363420)
+
 
 # ember-fragment-route
 
