@@ -1,4 +1,4 @@
-<button class="block font-bold {{if this.isActive @activeClass}}" ...attributes {{on 'click' this.navigate}}>
+<button class="block font-bold {{if this.isActive @activeClass}}" ...attributes type="button" {{on 'click' this.navigate}}>
   {{#if (has-block)}}
     {{yield}}
   {{else}}
