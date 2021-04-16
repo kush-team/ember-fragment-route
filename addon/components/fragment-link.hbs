@@ -1,3 +1,7 @@
 <button class="block font-bold {{if this.isActive @activeClass}}" ...attributes {{on 'click' this.navigate}}>
-  {{@title}}
+  {{#if (has-block)}}
+    {{yield}}
+  {{else}}
+    {{@title}}
+  {{/if}}
 </button>

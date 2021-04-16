@@ -1,7 +1,7 @@
 {
   "name": "ember-fragment-route",
-  "version": "0.0.3",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.4",
+  "description": "A simple way to use anchors in Ember JS.",
   "keywords": [
     "ember-addon"
   ],
@@ -60,7 +60,6 @@
     "@types/ember__test": "^3.16.1",
     "@types/ember__test-helpers": "^2.0.0",
     "@types/ember__utils": "^3.16.2",
-    "@types/htmlbars-inline-precompile": "^1.0.1",
     "@types/qunit": "^2.11.1",
     "@types/rsvp": "^4.0.3",
     "babel-eslint": "^10.1.0",
