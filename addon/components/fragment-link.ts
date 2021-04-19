@@ -9,6 +9,7 @@ interface FragmentLinkArgs {
   hash: string;
   path: string;
   activeClass: string;
+  tagName: string;
 }
 
 export default class FragmentLink extends Component<FragmentLinkArgs> {

@@ -6,6 +6,7 @@ import activeRoute from 'ember-fragment-route/services/active-route';
 
 interface FragmentArgs {
   hash: string;
+  tagName: string;
 }
 
 export default class Fragment extends Component<FragmentArgs> {

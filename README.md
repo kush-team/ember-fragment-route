@@ -38,15 +38,16 @@ Template Link
     @path="/" 
     @activeClass="active" 
     @title="test 3" 
+    @tagName={{element 'button' }}
   />
 ```
 Template Fragment
 ```handlebars
-<Fragment @hash="test" class="content full-h">
+<Fragment @hash="test" class="content full-h" @tagName={{element 'section' }}>
   <p>Test 1</p>
 </Fragment>
 
-<Fragment @hash="test2" class="content full-h">
+<Fragment @hash="test2" class="content full-h" @tagName={{element 'code' }}>
   <p>test 2</p>
 </Fragment>
 

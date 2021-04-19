@@ -1,3 +1,7 @@
-<section id={{@hash}} ...attributes {{did-insert this.setupInViewport}}>
-  {{yield}}
-</section>
+{{#if @tagName}}
+  {{#let @tagName as |Tag|}}
+    <Tag id={{@hash}} ...attributes {{did-insert this.setupInViewport}}>{{yield}}</Tag>
+  {{/let}}
+{{else}}
+  <div id={{@hash}} ...attributes {{did-insert this.setupInViewport}}>{{yield}}</div>
+{{/if}}

@@ -3,11 +3,14 @@
 <h2 id="title">Route Fragment test</h2>
 
 <nav class="sticky">
+  <Fragment-Link @hash="" @path="/" @activeClass="active" @title="Top" />
   <Fragment-Link @hash="test" @path="/" @activeClass="active" @title="test" />
   <Fragment-Link @hash="test2" @path="/" @activeClass="active" @title="test 2" />
   <Fragment-Link @hash="test3" @path="/" @activeClass="active" @title="test 3" />
-  <Fragment-Link @hash="" @path="/other" @activeClass="active" @title="Other page" />
+  <Fragment-Link @hash="" @path="/other" @activeClass="active" @title="Other page" @tagName={{element 'button' }} />
 </nav>
+
+
 
 
 

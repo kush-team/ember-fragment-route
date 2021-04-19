@@ -1,7 +1,20 @@
-<button class="block font-bold {{if this.isActive @activeClass}}" ...attributes type="button" {{on 'click' this.navigate}}>
-  {{#if (has-block)}}
-    {{yield}}
-  {{else}}
-    {{@title}}
-  {{/if}}
-</button>
+{{#if @tagName}}
+  {{#let @tagName as |Tag|}}
+    <Tag class="block font-bold {{if this.isActive @activeClass}}" ...attributes type="button" {{on 'click'
+      this.navigate}}>
+      {{#if (has-block)}}
+        {{yield}}
+      {{else}}
+        {{@title}}
+      {{/if}}
+    </Tag>
+  {{/let}}
+{{else}}
+  <a class="block font-bold {{if this.isActive @activeClass}}" ...attributes {{on 'click' this.navigate}}>
+    {{#if (has-block)}}
+      {{yield}}
+    {{else}}
+      {{@title}}
+    {{/if}}
+  </a>
+{{/if}}
