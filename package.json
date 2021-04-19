@@ -1,6 +1,6 @@
 {
   "name": "ember-fragment-route",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple way to use anchors in Ember JS.",
   "keywords": [
     "ember-addon"
